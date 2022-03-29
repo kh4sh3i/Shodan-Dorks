@@ -1,5 +1,5 @@
-# Shodan-Dorks
-A collection of interesting, and depressing search queries to plug into shodan.io
+# Shodan Dorks
+a curated list of shodan dorks for finding sensitive data in shodan.io
 
 
 ## 1️⃣ Search for secret API keys publicly exposed on websites :
@@ -76,4 +76,35 @@ e.g. All windows 7 machines in India
 ```
 country:"IN" os:"windows 7"
 ```
+
+## top Shodan dorks 
+
+* Jenkins CI 
+```
+"X-Jenkins" "Set-Cookie: JSESSIONID" http.title:"Dashboard"
+```
+
+* Docker Private Registries
+```
+"Docker-Distribution-Api-Version: registry" "200 OK" -gitlab
+```
+
+* MongoDB mag_right 
+```
+"MongoDB Server Information" port:27017 -authentication
+```
+
+* FTP Servers with Anonymous Login 
+```
+"220" "230 Login successful." port:21
+```
+
+* Mongo Express Web GUI
+```
+"Set-Cookie: mongo-express=" "200 OK"
+```
+
+### references
+* [Top 40 Shodan Dorks for Finding Sensitive IoT Data](https://securitytrails.com/blog/top-shodan-dorks)
+* [Awesome Shodan Search Queries](https://github.com/jakejarvis/awesome-shodan-queries)
 
