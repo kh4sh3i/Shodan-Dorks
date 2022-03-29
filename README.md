@@ -1,2 +1,2 @@
 # Shodan-Dorks
-mag A collection of interesting, and depressing search queries to plug into shodan.io
+A collection of interesting, and depressing search queries to plug into shodan.io
