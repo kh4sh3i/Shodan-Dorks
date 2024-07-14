@@ -104,6 +104,24 @@ country:"IN" os:"windows 7"
 "Set-Cookie: mongo-express=" "200 OK"
 ```
 
+
+##  SSL services (HTTPS, SMTPS, POP3S etc.) that were issued a certificate for *.google.com
+
+```
+ssl.cert.subject.cn:google.com
+```
+
+## search for special ip 
+```
+https://www.shodan.io/host/x.x.x.x
+```
+
+## search for special Doamin 
+```
+https://www.shodan.io/domain/site.com
+```
+
+
 ### references
 * [Top 40 Shodan Dorks for Finding Sensitive IoT Data](https://securitytrails.com/blog/top-shodan-dorks)
 * [Awesome Shodan Search Queries](https://github.com/jakejarvis/awesome-shodan-queries)
